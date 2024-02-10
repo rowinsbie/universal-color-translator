@@ -10,25 +10,25 @@
 ## Setup
 clone the repository  
 ```bash
-git clone https://github.com/rowinsbie/universal-color-translator.git`
+git clone https://github.com/rowinsbie/universal-color-translator.git
 ```
   
 Navigate or open the terminal to the project directory   
 ```bash
-cd universal-color-translator/`
+cd universal-color-translator/
 ```
 In the terminal of the project directory, run the following command to build the Docker image  
 ```bash
-docker build -t universal-color-translator .` 
+docker build -t universal-color-translator .
 ```
 Run the Docker container  
 ```bash
-docker run -p 8080:8080 universal-color-translator`
+docker run -p 8080:8080 universal-color-translator
 ```
 
 Go to your browser and visit  
 ```bash
-http://localhost:8080/`
+http://localhost:8080/
 ```
 
 ## Overview
