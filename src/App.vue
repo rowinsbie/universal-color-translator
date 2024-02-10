@@ -1,9 +1,9 @@
 <script>
-import ColorConverter from './components/ColorConverter.vue'
+import ColorTranslator from './components/ColorTranslator.vue'
 import { defineComponent } from 'vue';
 export default defineComponent({
   components: {
-    ColorConverter
+    ColorTranslator
   }
 });
 </script>
@@ -16,7 +16,7 @@ export default defineComponent({
       <div class="text-center font-bold pb-3">
         <p>Translate color name to HEX</p>
       </div>
-    <ColorConverter />
+    <ColorTranslator />
   </div>
 </template>
 
