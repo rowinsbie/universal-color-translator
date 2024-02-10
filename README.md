@@ -3,7 +3,7 @@
 
 
 
-## Requirement
+## Requirements
 - Docker
 - Latest Node
 
