@@ -1,11 +1,56 @@
 # Universal Color Translator
 ![Logo](documentation/images/index.png)
 
-This simple web application that allows user to input user's color name and it'll return the hexadecimal equivalent.
+
 
 ## Requirement
 - Docker
 
 ## Setup
 clone the repository  
-## TODO
+`https://github.com/rowinsbie/universal-color-translator.git`
+  
+Navigate or open the terminal to the project directory   
+`cd universal-color-translator/`
+
+In the terminal of the project directory, run the following command to build the Docker image  
+`docker build -t universal-color-translator .` 
+
+Run the Docker container  
+`docker run -p 8080:80 universal-color-translator`
+
+Go to your browser and visit  
+`http://localhost:8080/`
+
+
+## Overview
+Universal Color Translator is simple Vue.js application that allows users to translate color names to hexadecimal. 
+
+### Tech Stack
+ - Vue3
+ - Tailwind
+ - jest for unit test
+
+### Key Features
+  - Translate color names to hexadecimal values
+  - Lightweight and fast performance
+
+### Usage
+
+1. Enter a color name in the input field.
+2. Press Enter or click the "Translate" button.
+3. The corresponding hexadecimal value will be displayed below the input field.
+
+### Security
+#### 1st layer
+ - DOM Purify is implemented to prevent XSS
+#### 2nd layer
+ - Vue.js framework automatic HTML escaping using `{{}}`
+
+## Guide for the test
+Navigate or open the terminal to the project directory, and run the following command to run the test  
+`npm test`
+
+![Image Alt Text](documentation/images/test-ss.png)  
+*Test result*
+
