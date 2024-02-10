@@ -17,14 +17,14 @@ In the terminal of the project directory, run the following command to build the
 `docker build -t universal-color-translator .` 
 
 Run the Docker container  
-`docker run -p 8080:80 universal-color-translator`
+`docker run -p 8080:8080 universal-color-translator`
 
 Go to your browser and visit  
 `http://localhost:8080/`
 
 
 ## Overview
-Universal Color Translator is simple Vue.js application that allows users to translate color names to hexadecimal. 
+Universal Color Translator is simple standalone Vue.js application that allows users to translate color names to hexadecimal. 
 
 ### Tech Stack
  - Vue3
@@ -42,6 +42,8 @@ Universal Color Translator is simple Vue.js application that allows users to tra
 3. The corresponding hexadecimal value will be displayed below the input field.
 
 ### Security
+Universal Color Translator is a standalone application, so the only available attack surface is the input field, and no sensitive data or configuration that can be found or access using content discovery tools.
+
 #### 1st layer
  - DOM Purify is implemented to prevent XSS
 #### 2nd layer
